@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/Simple-Robotics/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
   sha256: 9c5e7097c8a840174d2f0139edb0aba1adc00c87ce01f4ed17b4a33f19034089
-  patches:
-    - patches/all.patch
 
 build:
   number: 0
