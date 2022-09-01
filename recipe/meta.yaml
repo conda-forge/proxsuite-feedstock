@@ -10,7 +10,7 @@ source:
   sha256: 9c5e7097c8a840174d2f0139edb0aba1adc00c87ce01f4ed17b4a33f19034089
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x') }}
 
@@ -31,10 +31,12 @@ requirements:
     - eigen
     - python
     - numpy
+    - scipy
     - simde
   run:
     - eigen
     - python
+    - scipy
     - {{ pin_compatible('numpy') }}
     - simde
 
