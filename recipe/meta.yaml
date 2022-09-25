@@ -30,7 +30,6 @@ requirements:
   host:
     - eigen
     - python
-    - scipy
     - simde
   run:
     - eigen
