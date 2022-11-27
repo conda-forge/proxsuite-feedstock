@@ -29,4 +29,18 @@ index 01ae2109..e7b49193 100644
  del platform
 +del has_vectorization_instructions
 +del machine
+diff --git a/include/proxsuite/linalg/dense/core.hpp b/include/proxsuite/linalg/dense/core.hpp
+index 72c0b31b..89d3511e 100644
+--- a/include/proxsuite/linalg/dense/core.hpp
++++ b/include/proxsuite/linalg/dense/core.hpp
+@@ -9,7 +9,8 @@
+ #include <proxsuite/linalg/veg/util/assert.hpp>
+ #include <proxsuite/linalg/veg/memory/dynamic_stack.hpp>
+
+-#ifndef __aarch64__
++#if !(defined(__aarch64__) || defined(__PPC64__) || defined(__ppc64__) ||      \
++      defined(_ARCH_PPC64))
+ #include <immintrin.h>
+ #endif
+
 
