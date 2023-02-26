@@ -1,11 +1,11 @@
-About proxsuite
-===============
+About proxsuite-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/proxsuite-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/simple-robotics/proxsuite
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/proxsuite-feedstock/blob/main/LICENSE.txt)
 
 Summary: Quadratic Programming Solver for Robotics and beyond.
 
