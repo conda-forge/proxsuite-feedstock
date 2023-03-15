@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/Simple-Robotics/{{ name }}/archive/v{{ version }}.tar.gz
+  url: https://github.com/Simple-Robotics/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
   sha256: 0f7f8396ff76a35f9bd356368f8a2d664acc489931eefdc37f54e49199c6c89e
 
 build:
