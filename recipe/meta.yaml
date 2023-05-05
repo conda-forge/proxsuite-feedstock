@@ -1,5 +1,5 @@
 {% set name = "proxsuite" %}
-{% set version = "0.3.6" %}
+{% set version = "0.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Simple-Robotics/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b318bd02c8a5ae45c32589a2abd530a74810a9001cb33b76ab733dc2a3715510
+  sha256: 792ad93eede02e9aa18d5c2916b94e8731fae4799f18285ccb5fe7b87dbbfc6d
 
 build:
   number: 0
