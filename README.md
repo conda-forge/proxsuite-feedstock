@@ -370,4 +370,5 @@ Feedstock Maintainers
 * [@Bambade](https://github.com/Bambade/)
 * [@fabinsch](https://github.com/fabinsch/)
 * [@jcarpent](https://github.com/jcarpent/)
+* [@jorisv](https://github.com/jorisv/)
 
