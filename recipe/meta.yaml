@@ -10,15 +10,13 @@ source:
   sha256: fb90a9e45f5bf91659c394b7cfa22f9754bd864798c10a1269d342f6a456a1f3
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x') }}
 
 requirements:
   build:
-    - {{ compiler('cxx') }}  # [not win]
-    - vs2017_win-64  # [win64]
-    - vs2017_win-32  # [win32]
+    - {{ compiler('cxx') }}
     - cmake
     - clang  # [win]
     - make  # [not win]
