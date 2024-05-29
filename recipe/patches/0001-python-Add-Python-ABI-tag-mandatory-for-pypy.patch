@@ -1,0 +1,34 @@
+From 1a5afb2464b46ff08dd835d51614145478bd0a58 Mon Sep 17 00:00:00 2001
+From: Joris Vaillant <joris.vaillant@inria.fr>
+Date: Wed, 29 May 2024 15:05:52 +0200
+Subject: [PATCH] python: Add Python ABI tag (mandatory for pypy)
+
+---
+ bindings/python/CMakeLists.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/bindings/python/CMakeLists.txt b/bindings/python/CMakeLists.txt
+index 68e87cd09..5e93f15a9 100644
+--- a/bindings/python/CMakeLists.txt
++++ b/bindings/python/CMakeLists.txt
+@@ -32,6 +32,8 @@ if(${CMAKE_SYSTEM_PROCESSOR} MATCHES "(x86)|(X86)|(amd64)|(AMD64)")
+   set_target_properties(
+     instructionset
+     PROPERTIES OUTPUT_NAME instructionset
++               PREFIX ""
++               SUFFIX ${PYTHON_EXT_SUFFIX}
+                LIBRARY_OUTPUT_DIRECTORY
+                "${CMAKE_BINARY_DIR}/bindings/python/${PROJECT_NAME}"
+                LIBRARY_OUTPUT_DIRECTORY_RELEASE
+@@ -87,6 +89,8 @@ function(CREATE_PYTHON_TARGET target_name COMPILE_OPTIONS dependencies)
+   set_target_properties(
+     ${target_name}
+     PROPERTIES OUTPUT_NAME ${target_name}
++               PREFIX ""
++               SUFFIX ${PYTHON_EXT_SUFFIX}
+                LIBRARY_OUTPUT_DIRECTORY
+                "${CMAKE_BINARY_DIR}/bindings/python/${PROJECT_NAME}"
+                LIBRARY_OUTPUT_DIRECTORY_RELEASE
+-- 
+2.45.1
+
