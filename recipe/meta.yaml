@@ -1,5 +1,5 @@
 {% set name = "proxsuite" %}
-{% set version = "0.6.4" %}
+{% set version = "0.6.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,10 @@ package:
 
 source:
   url: https://github.com/Simple-Robotics/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fb90a9e45f5bf91659c394b7cfa22f9754bd864798c10a1269d342f6a456a1f3
-
-  patches:
-    # Add ABI tag https://github.com/Simple-Robotics/proxsuite/pull/321
-    - patches/0001-python-Add-Python-ABI-tag-mandatory-for-pypy.patch
+  sha256: 29058f833b702231751f4ad16746861de262ce638e5392dd968f2004e1de5ff3
 
 build:
-  number: 2
+  number: 0
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x') }}
 
