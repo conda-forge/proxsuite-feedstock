@@ -9,10 +9,6 @@ source:
   url: https://github.com/Simple-Robotics/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
   sha256: 29058f833b702231751f4ad16746861de262ce638e5392dd968f2004e1de5ff3
 
-  patches:
-    # Add ABI tag https://github.com/Simple-Robotics/proxsuite/pull/321
-    - patches/0001-python-Add-Python-ABI-tag-mandatory-for-pypy.patch
-
 build:
   number: 0
   run_exports:
