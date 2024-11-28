@@ -1,3 +1,6 @@
+# This patch fixes an issue with the Windows build.
+# See the related PR: https://github.com/Simple-Robotics/proxsuite/pull/357
+
 diff --git a/include/proxsuite/linalg/veg/tuple.hpp b/include/proxsuite/linalg/veg/tuple.hpp
 index 8fe3ca1a9..36fea520d 100644
 --- a/include/proxsuite/linalg/veg/tuple.hpp
