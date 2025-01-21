@@ -8,9 +8,6 @@ package:
 source:
   url: https://github.com/Simple-Robotics/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
   sha256: 4c06393ed0db6a2633261b3f634d22f7dd824d19087c427f77d0d7a97665feb1
-  patches:
-    # See the related PR: https://github.com/Simple-Robotics/proxsuite/pull/357
-    - fix-windows.patch
 
 build:
   number: 0
