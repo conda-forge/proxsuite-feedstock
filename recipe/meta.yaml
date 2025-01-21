@@ -1,5 +1,5 @@
 {% set name = "proxsuite" %}
-{% set version = "0.6.7" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/Simple-Robotics/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3a397ba96ddcfe5ade150951f70f867a3741206a694e50588f954a94c4cf3f27
+  sha256: 4c06393ed0db6a2633261b3f634d22f7dd824d19087c427f77d0d7a97665feb1
   patches:
     # See the related PR: https://github.com/Simple-Robotics/proxsuite/pull/357
     - fix-windows.patch
 
 build:
-  number: 2
+  number: 0
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x') }}
 
