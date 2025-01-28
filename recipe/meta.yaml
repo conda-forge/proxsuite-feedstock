@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Simple-Robotics/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 594637b151251d745534cdd25b32ea584c29920bac6e4c547a4467f10b71af4b
+  sha256: 8c7f89d2c7a52e157ba5fb20ff2a73117574d7ec629a11f9c5f05b549c59bf7b
 
 build:
   number: 0
