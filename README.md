@@ -372,6 +372,3 @@ Feedstock Maintainers
 * [@jcarpent](https://github.com/jcarpent/)
 * [@jorisv](https://github.com/jorisv/)
 
-
-<!-- dummy commit to enable rerendering -->
-
