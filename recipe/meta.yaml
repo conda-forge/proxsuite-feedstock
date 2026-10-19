@@ -19,7 +19,7 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
     - cmake
-    - make  # [not win]
+    - ninja
     - doxygen
     - libgomp       # [linux]
     - llvm-openmp   # [osx or win]
