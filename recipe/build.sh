@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+
+set -exuo
 
 if [ "$(uname)" == "Darwin" ]; then
   # for Mac OSX
