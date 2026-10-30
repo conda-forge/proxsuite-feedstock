@@ -11,6 +11,8 @@ fi
 mkdir build
 cd build
 
+PYTHON_INCLUDE_DIR="$(python -c 'import sysconfig; print(sysconfig.get_path("include"))')"
+
 cmake ${CMAKE_ARGS} .. \
       -GNinja \
       -DCMAKE_BUILD_TYPE=Release \
@@ -19,7 +21,8 @@ cmake ${CMAKE_ARGS} .. \
       -DBUILD_PYTHON_INTERFACE:BOOL=ON \
       -DBUILD_WITH_VECTORIZATION_SUPPORT:BOOL=ON \
       -DBUILD_WITH_OPENMP_SUPPORT:BOOL=ON \
-      -DPython_EXECUTABLE=$PYTHON
+      -DPython_EXECUTABLE=$PYTHON \
+      -DPython_INCLUDE_DIR=$PYTHON_INCLUDE_DIR
 
 ninja -j${CPU_COUNT}
 ninja install
