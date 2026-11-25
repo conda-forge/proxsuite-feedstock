@@ -11,15 +11,17 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '21'
+- '22'
 llvm_openmp:
-- '21'
+- '22'
 macos_machine:
 - arm64-apple-darwin20.0.0
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
+proxsuite:
+- 0.8.3
 python:
 - 3.13.* *_cp313
 target_platform:
