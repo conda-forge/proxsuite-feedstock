@@ -1,3 +1,5 @@
 cxx_compiler:         # [win]
   - clang-cl          # [win]
+cxx_compiler_version: # [win]
+  - 22                # [win]
 
